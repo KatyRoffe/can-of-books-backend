@@ -17,9 +17,9 @@ Technologies: React, Express, Cors, MongoDB
 
 ## Change Log
 
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+* 09-27-2021 4:30pm - Schema and model completed.
+* 09-27-2021 5:20pm - Seed file complete, but having trouble populating Mongo. Waiting for assistance.
+* 09-27-2021 6:40 - Books appearing in database. Unfortunately, experimentation has pushed more books than intended. 
 
 ## Estimates
 
@@ -35,7 +35,7 @@ Technologies: React, Express, Cors, MongoDB
 > Finish time: 5:30 / initial code completed: waiting for TA for assistance with Database
 > Resume time: 6:20 / Received assistence from Hexx and notes via Slack from JB
 > Finish time: 6:40
-> Actual time needed to complete: approx 4 hours
+> Actual time needed to complete: 3 hours, 5 minutes
 ---
 
 ## Credit and Collaborations
