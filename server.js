@@ -22,7 +22,7 @@ const mongoose = require('mongoose');
 const BookModel = require('./models/schema.js');
 // async function seed() {
 
-//   mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect(process.env.DATABASE_URL);
   
 
 //     try {
