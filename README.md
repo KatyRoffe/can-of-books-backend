@@ -25,6 +25,12 @@ Technologies: React, Express, Cors, MongoDB
 > Finish time: 14:30
 > Actual time needed to complete: 90 minutes
 ---
+> Name of feature: Storage
+> Estimate of time needed to complete: 3 hours
+> Start time: 2:45
+> Finish time: _______
+> Actual time needed to complete: 
+---
 
 ## Credit and Collaborations
 TA Assistance: 
