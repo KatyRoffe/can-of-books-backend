@@ -67,13 +67,14 @@ app.get('/test', (request, response) => {
 })
 
 app.get('/books', async (req, res) => {
-  const filterQuery = {};
-  if (req.query.title) {
-    filterQuery.title = req.query.title;
-  }
-  const books = await BookModel.find(filterQuery);
+  // const filterQuery = {};
+  console.log('books');
+  // if (req.query.title) {
+  //   filterQuery.title = req.query.title;
+  // }
+  // const books = await BookModel.find(filterQuery);
 
-  res.send(books);
+  res.send('test pending ');
 })
 
 
