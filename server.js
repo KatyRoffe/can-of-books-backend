@@ -7,6 +7,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 
 const PORT = process.env.PORT || 3001;
 
@@ -78,6 +79,19 @@ app.get('/books', async (req, res) => {
   // console.log(books)
   res.send(books);
 })
+
+
+app.post('/books', async (req, res) => {
+
+try {
+  const bookInfo = req.body;
+
+  const newBook = await BookModel.create(bookInfo)
+  res.status(201).send(newBook);
+} catch (error) {
+  res.status(500).send('Error creating book')
+}
+});
 
 
 
