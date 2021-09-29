@@ -80,5 +80,23 @@ app.get('/books', async (req, res) => {
 })
 
 
+app.post('/books', async (req, res) => {
+
+try {
+  const bookInfo = req.body;
+
+  const newBook = await BookModel.create({
+    title: bookInfo.title,
+    description: bookInfo.description,
+    status: bookInfo.status,
+    email: bookInfo.email,
+  })
+  res.status(201).send(newBook);
+} catch (error) {
+  res.status(500).send('Error creating book')
+}
+});
+
+
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
