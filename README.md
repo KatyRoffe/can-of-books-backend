@@ -19,7 +19,7 @@ Technologies: React, Express, Cors, MongoDB
 
 * 09-27-2021 4:30pm - Schema and model completed.
 * 09-27-2021 5:20pm - Seed file complete, but having trouble populating Mongo. Waiting for assistance.
-* 09-27-2021 6:40 - Books appearing in database. Unfortunately, experimentation has pushed more books than intended. 
+* 09-27-2021 6:40 - Books appearing in database. Unfortunately, experimentation has pushed more books than intended.
 
 ## Estimates
 
@@ -75,3 +75,15 @@ Resources:
   * Same as above.
 * How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in understanding and skill level?
   * Make efforts to communicate clearly and to help with any questions regarding our code. Come in with a healthy dose of patience and understanding.
+
+### Time Estimates
+
+#### Name of feature: Add POST method
+
+* Estimate of time needed to complete: 5 hours
+
+* Start time: 1:30pm
+
+* Finish time: 10:20pm
+
+* Actual time needed to complete: 9 hours
