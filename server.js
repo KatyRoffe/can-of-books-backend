@@ -26,12 +26,10 @@ app.get('/test', (request, response) => {
 
 app.get('/books', async (req, res) => {
   const filterQuery = {};
-  // console.log('books');
   if (req.query.email) {
     filterQuery.email = req.query.email;
   }
   const books = await BookModel.find(filterQuery);
-  // console.log(books)
   res.send(books);
 })
 
@@ -76,7 +74,7 @@ app.delete('/books/:id', async (req, res) => {
 
 app.put('/books/:id', async (req, res) => {
   try {
-    const email = req.query.emaill;
+    const email = req.query.email;
     const id = req.params.id;
 
     const bookUpdate = await BookModel.findOne({_id: id, email});
