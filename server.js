@@ -56,12 +56,12 @@ app.delete('/books/:id', async (req, res) => {
     const book = await BookModel.findOne({ _id: id, email });
 
     if (!book) {
-      res.status(400).send('unable to delete book');
+      res.status(400).send('Error: Book could not be deleted.');
       return;
     }
 
     if (book.email !== email) {
-      res.status(400).send('unable to delete book');
+      res.status(400).send('Error: Book could not be deleted.');
       return;
     }
 
@@ -70,9 +70,31 @@ app.delete('/books/:id', async (req, res) => {
 
   } catch (error) {
     console.error(error);
-    res.status(400).send('unable to delete book');
+    res.status(400).send('Error: Book could not be deleted.');
   }
 })
+
+app.put('/books/:id', async (req, res) => {
+  try {
+    const email = req.query.emaill;
+    const id = req.params.id;
+
+    const bookUpdate = await BookModel.findOne({_id: id, email});
+
+    if (!bookUpdate) {
+      res.status(400).send('Error: Book could not be updated.');
+      return;
+    }
+    const updatedBook = await BookModel.findByIdAndUpdate(id, req.body, { new: true });
+    res.send(updatedBook);
+
+  } catch (error) {
+    console.error(error);
+    res.status(400).send('Error: Book could not be updated.');
+  }
+}
+  
+)
 
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
