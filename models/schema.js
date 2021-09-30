@@ -6,9 +6,9 @@ const { Schema } = mongoose;
 
 const bookSchema = new Schema ({
     title: {type: String, required: true},
-    description: {type: String},
-    status: {type: String}, // data type may changed based on what status actually refers to
-    email: {type: String},
+    description: {type: String, required: true},
+    status: {type: String, required: true}, // data type may changed based on what status actually refers to
+    email: {type: String, required: true},
 });
 
 const BookModel = mongoose.model('Book', bookSchema);
